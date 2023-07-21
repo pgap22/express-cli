@@ -5,15 +5,27 @@
     "prisma": "^5.0.0",
     "zod": "^3.21.4"
   },
-  "name": "express-cli",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "name": "express-cli2",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "dev": "nodemon ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgap22/express-cli.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pgap22/express-cli/issues"
+  },
+  "homepage": "https://github.com/pgap22/express-cli#readme",
   "description": ""
 }
