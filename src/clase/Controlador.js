@@ -26,7 +26,7 @@ class Controlador {
 
       const data = this.validar.actualizar.parse(req.body);
 
-      const payload = await prisma.user.update({ where: { id }, data });
+      const payload = await prisma[this.tabla].update({ where: { id }, data });
 
       return res.json({ ...payload });
     } catch (error) {
@@ -63,7 +63,7 @@ class Controlador {
     try {
       const id = parseInt(req.params.id);
 
-      await prisma.user.delete({ where: { id } });
+      await prisma[this.tabla].delete({ where: { id } });
 
       return res.json({ msg: "Se ha eliminado !" });
     } catch (error) {
