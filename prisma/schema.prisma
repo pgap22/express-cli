@@ -11,6 +11,7 @@ datasource db {
 }
 
 //! IMPORTANT ALL TABLES ID's NEED TO BE 'id'
+//! IF YOU MODIFY THIS FILE REMEMBER DO 'npx prisma migrate dev'
 
 // model usuario{
 //   id Int @id @default(autoincrement())
