@@ -1,6 +1,6 @@
-import { prisma } from "../db/prisma.js";
+import { prisma } from "../../db/prisma.js";
 
-class Controlador {
+class Controller {
   constructor(validar, tabla) {
     this.validar = validar;
     this.tabla = tabla;
@@ -8,9 +8,8 @@ class Controlador {
 
   crear = async (req, res) => {
     try {
-
       const data = this.validar.crear.parse(req.body);
-
+      
       const payload = await prisma[this.tabla].create({ data });
 
       return res.json({ ...payload });
@@ -73,4 +72,4 @@ class Controlador {
   };
 }
 
-export { Controlador };
+export { Controller };

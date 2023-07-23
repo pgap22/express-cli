@@ -1,6 +1,6 @@
 import z from "zod";
 
-class Esquema {
+class Scheme {
   constructor(validar) {
     this.validar = validar
   }
@@ -28,4 +28,4 @@ class Esquema {
   }
 }
 
-export { Esquema };
+export { Scheme };
