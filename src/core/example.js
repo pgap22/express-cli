@@ -6,6 +6,8 @@
     password: "string",
     avatar: "string",
   });
-
+                                      | Here only add []
+                                      |
+                                      v
   app.use("/usuario", upload.single("avatar[]"), getImageString("avatar"), usuario.router);
 */
