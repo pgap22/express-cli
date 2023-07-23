@@ -10,6 +10,8 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+//! IMPORTANT ALL TABLES ID's NEED TO BE 'id'
+
 // model usuario{
 //   id Int @id @default(autoincrement())
 //   nombre String
